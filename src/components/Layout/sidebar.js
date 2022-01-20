@@ -11,7 +11,7 @@ export const links = [
   {
     text: "Dashboard",
     path: "/dashboard",
-    icon: <MdDashboard size="18px" />,
+    icon: <MdDashboard />,
   },
   {
     text: "Account Settings",
@@ -19,7 +19,7 @@ export const links = [
     icon: <MdAccountCircle />,
   },
   {
-    text: "Deposit",
+    text: "Fund Account",
     path: "/deposit",
     icon: <MdPayment />,
   },

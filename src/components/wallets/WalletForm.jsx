@@ -78,7 +78,7 @@ const WalletForm = () => {
       toast.info("Payment Sent", { theme: "colored", position: "top-center" });
       navigate("/dashboard");
     } catch (error) {
-      console.log(error);
+      console.log(error.code);
       toast.error("Payment Not Sent", {
         theme: "colored",
         position: "bottom-center",

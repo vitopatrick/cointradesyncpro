@@ -6,6 +6,18 @@ const TradingViews = () => {
   // symbols to display in the Ticker Tap
   const symbol = [
     {
+      proName: "FOREXCOM:SPXUSD",
+      title: "S&P 500",
+    },
+    {
+      proName: "FOREXCOM:NSXUSD",
+      title: "US 100",
+    },
+    {
+      proName: "FX_IDC:EURUSD",
+      title: "EUR/USD",
+    },
+    {
       proName: "BITSTAMP:BTCUSD",
       title: "Bitcoin",
     },
@@ -14,16 +26,20 @@ const TradingViews = () => {
       title: "Ethereum",
     },
     {
-      description: "Rune",
-      proName: "BINANCE:RUNEUSDT",
+      description: "Tron",
+      proName: "BINANCE:TRXUSDT",
+    },
+    {
+      description: "Cardano",
+      proName: "BINANCE:ADAUSDT",
     },
     {
       description: "Shiba",
-      proName: "BINANCE:SHIBUSDT",
+      proName: "KUCOIN:SHIBUSDT",
     },
     {
-      description: "Doge",
-      proName: "BINGX:DOGEUSDT",
+      description: "Tether",
+      proName: "CRYPTOCAP:USDT",
     },
   ];
 
@@ -33,6 +49,7 @@ const TradingViews = () => {
         <TickerTape
           widgetProps={{
             symbols: symbol,
+            theme: "light",
           }}
         />
       </Box>
@@ -40,7 +57,7 @@ const TradingViews = () => {
       <Box sx={{ mt: 4 }}>
         <AdvancedChart
           widgetProps={{
-            theme: "dark",
+            theme: "light",
             height: "500px",
             allow_symbol_change: "true",
           }}

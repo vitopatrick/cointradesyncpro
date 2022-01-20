@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Tabs, Tab, Box } from "@mui/material";
 import "./plan.css";
-import BasicPlan from "./BasicPlan";
 import BronzePlan from "./BronzePlan";
 import SliverPlan from "./SliverPlan";
 import GoldPlan from "./GoldPlan";
@@ -24,10 +23,7 @@ const Plan = () => {
         <div className="plan__container">
           <div className="plan__title">
             <h1 className="fw-bolder">Choose your Prefered Plan</h1>
-            <p>
-              Choose your plans and increase your mining speed and make more
-              coins!
-            </p>
+            <p>Investment offer (30% ROI on all investment plans)</p>
           </div>
         </div>
       </div>
@@ -41,10 +37,6 @@ const Plan = () => {
           centered
         >
           <Tab
-            label="Basic"
-            sx={{ color: "#000", textTransform: "uppercase" }}
-          />
-          <Tab
             label="Bronze"
             sx={{ color: "#000", textTransform: "uppercase" }}
           />
@@ -57,24 +49,21 @@ const Plan = () => {
             sx={{ color: "#000", textTransform: "uppercase" }}
           />
           <Tab
-            label="Platinum"
+            label="Premium"
             sx={{ color: "#000", textTransform: "uppercase" }}
           />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <BasicPlan />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
         <BronzePlan />
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={1}>
         <SliverPlan />
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel value={value} index={2}>
         <GoldPlan />
       </TabPanel>
-      <TabPanel value={value} index={4}>
+      <TabPanel value={value} index={3}>
         <PlatinumPlan />
       </TabPanel>
     </>

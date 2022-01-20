@@ -62,7 +62,7 @@ const Form = () => {
       !passwordRef.current.value |
       !countryRef.current.value
     ) {
-      toast("Please fill the form correctly", {
+      return toast("Please fill the form correctly", {
         type: "error",
         position: "bottom-center",
         theme: "colored",
@@ -104,6 +104,7 @@ const Form = () => {
       // redirect user to login
       naviagte("/login");
     } catch (error) {
+      console.log(error);
       if (error.code === "auth/email-already-in-use") {
         toast("Email is already in use", {
           type: "error",

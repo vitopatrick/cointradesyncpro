@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import { Typography, Box, Tabs, Tab } from "@mui/material";
-import { basicPlan } from "../Plans/basic";
 import { bronzePlan } from "../Plans/bronze";
 import { sliverPlan } from "../Plans/sliver";
 import { goldPlan } from "../Plans/gold";
@@ -77,10 +76,6 @@ const Investment = () => {
           allowScrollButtonsMobile
         >
           <Tab
-            label="Basic"
-            sx={{ color: "#fff", textTransform: "uppercase" }}
-          />
-          <Tab
             label="Bronze"
             sx={{ color: "#fff", textTransform: "uppercase" }}
           />
@@ -93,7 +88,7 @@ const Investment = () => {
             sx={{ color: "#fff", textTransform: "uppercase" }}
           />
           <Tab
-            label="Platinum"
+            label="Premium"
             sx={{ color: "#fff", textTransform: "uppercase" }}
           />
         </Tabs>
@@ -101,36 +96,9 @@ const Investment = () => {
       <TabPanel value={value} index={0}>
         <div>
           <div className="row">
-            {basicPlan.map((plan) => (
-              <div className="col-sm-12 col-md-3 col-lg-3 " key={plan.id}>
-                <div className="plan__card p-5 shadow">
-                  <div>
-                    <h1 className="fw-bolder fs-1">{`$${plan.invest}`}</h1>
-                  </div>
-                  <div className="plan-reward">
-                    <p>Reward:{`$${plan.reward}`}</p>
-                    <p>Duration:{plan.duration}</p>
-                  </div>
-                  <div className="my-4">
-                    <button
-                      className="btn btn-success"
-                      onClick={() => addInvestment(plan.invest, "Basic")}
-                    >
-                      Start Now !!
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <div>
-          <div className="row">
             {bronzePlan.map((plan) => (
               <div className="col-sm-12 col-md-3 col-lg-3 " key={plan.id}>
-                <div className="plan__card p-5 shadow">
+                <div className="plan__card p-5 mb-3 shadow">
                   <div>
                     <h1 className="fw-bolder fs-1">{`$${plan.invest}`}</h1>
                   </div>
@@ -152,7 +120,7 @@ const Investment = () => {
           </div>
         </div>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={1}>
         <div>
           <div className="row">
             {sliverPlan.map((plan) => (
@@ -179,7 +147,7 @@ const Investment = () => {
           </div>
         </div>
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel value={value} index={2}>
         <div>
           <div className="row">
             {goldPlan.map((plan) => (
@@ -206,7 +174,7 @@ const Investment = () => {
           </div>
         </div>
       </TabPanel>
-      <TabPanel value={value} index={4}>
+      <TabPanel value={value} index={3}>
         <div>
           <div className="row">
             {platinumPlan.map((plan) => (
