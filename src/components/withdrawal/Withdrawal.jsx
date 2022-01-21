@@ -113,17 +113,6 @@ const Withdrawal = () => {
                       mt: 2,
                     }}
                   >
-                    <Typography variant="body1">Min Amount</Typography>
-                    <Typography variant="subtitle1">{option.amount}</Typography>
-                  </Box>
-                  <Box
-                    sx={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      mb: 2,
-                      mt: 2,
-                    }}
-                  >
                     <Typography variant="body1">Charge</Typography>
                     <Typography variant="subtitle1">{option.charge}</Typography>
                   </Box>
@@ -137,7 +126,7 @@ const Withdrawal = () => {
                   >
                     <Typography variant="body1">Duration</Typography>
                     <Typography variant="subtitle1">
-                      {option.duration}
+                      {`within ${option.duration}`}
                     </Typography>
                   </Box>
                   <Box sx={{ mt: 4 }}>
