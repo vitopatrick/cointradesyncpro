@@ -23,8 +23,8 @@ const Withdrawal = () => {
   toast.configure();
   // form state
   const addressRef = useRef();
+  const amountRef = useRef();
   const [value, setValue] = useState("");
-  const [amt, setAmt] = useState("");
   // function to set modal open and close
   const [open, setOpen] = useState(false);
   const handleClose = () => setOpen(false);
@@ -38,7 +38,6 @@ const Withdrawal = () => {
   const getValue = (id) => {
     const method = options.filter((option) => id === option.name);
     setValue(method[0].name);
-    setAmt(method[0].amount);
     setOpen(true);
   };
 
@@ -52,7 +51,7 @@ const Withdrawal = () => {
         "withdraws"
       );
 
-      if (!addressRef.current.value) {
+      if (!addressRef.current.value | !amountRef.current.value) {
         toast.error("Please Fill out the correct form", {
           theme: "colored",
           position: "bottom-center",
@@ -62,7 +61,7 @@ const Withdrawal = () => {
       await addDoc(collectionRef, {
         method: value,
         address: addressRef.current.value,
-        amount: amt,
+        amount: amountRef.current.value,
         approved: false,
         date: serverTimestamp(),
       });
@@ -114,7 +113,7 @@ const Withdrawal = () => {
                       mt: 2,
                     }}
                   >
-                    <Typography variant="body1">Amount</Typography>
+                    <Typography variant="body1">Min Amount</Typography>
                     <Typography variant="subtitle1">{option.amount}</Typography>
                   </Box>
                   <Box
@@ -180,6 +179,12 @@ const Withdrawal = () => {
                 label="Enter Address"
                 sx={{ mt: 5, mb: 3 }}
                 inputRef={addressRef}
+              />
+              <TextField
+                label="Enter Amount"
+                sx={{ mb: 3 }}
+                inputRef={amountRef}
+                type="number"
               />
               <TextField disabled sx={{ mb: 3 }} placeholder={value} />
               <Button
