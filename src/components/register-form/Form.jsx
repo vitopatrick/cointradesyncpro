@@ -97,7 +97,7 @@ const Form = () => {
         uid: user.uid,
       });
       // toast notification
-      toast.success("Welcome to CoinSignalPro Please verify your email", {
+      toast.success("Welcome to coinstationpro Please verify your email", {
         position: "top-center",
         theme: "colored",
       });
@@ -135,7 +135,7 @@ const Form = () => {
         <div className="form__body">
           <div className="form__title text-center my-5">
             <Link to="/" className="fs-1 fw-bolder text-main text-success">
-              CoinSignalPro
+              coinstationpro
             </Link>
             <p className="text-muted">
               If you already have an account with us click here to{" "}
@@ -202,7 +202,7 @@ const Form = () => {
                 <Link to="/terms" className="t-m">
                   Terms & Conditions
                 </Link>
-                {""}of CoinSignalPro
+                {""}of coinstationpro
               </p>
             </div>
             <button
@@ -214,7 +214,7 @@ const Form = () => {
           </div>
           <div className="text-center mt-2">
             <p className="text-success">
-              © Copyright 2021 CoinSignalPro All Rights Reserved.
+              © Copyright 2021 coinstationpro All Rights Reserved.
             </p>
           </div>
         </div>
