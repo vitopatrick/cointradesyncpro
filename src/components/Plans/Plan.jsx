@@ -41,7 +41,7 @@ const Plan = () => {
             sx={{ color: "#000", textTransform: "uppercase" }}
           />
           <Tab
-            label="Sliver"
+            label="Silver"
             sx={{ color: "#000", textTransform: "uppercase" }}
           />
           <Tab
