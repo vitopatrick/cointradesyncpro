@@ -60,6 +60,7 @@ const TradingViews = () => {
             theme: "light",
             height: "500px",
             allow_symbol_change: "true",
+            symbol: "BINANCE:BTCUSDT",
           }}
         />
       </Box>
