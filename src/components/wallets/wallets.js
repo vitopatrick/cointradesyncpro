@@ -11,7 +11,7 @@ import btccLogo from "../../img/btcc.png";
 export const wallets = [
   {
     coin: "Bitcoin",
-    address: "bc1q798ugydk5j8c37u2yrn4mccprw26ukcqptg5uu",
+    address: "bc1q2kvnmd3jagfe4mxypy7zdhlcftakc88pa0tr0w",
     addressName: "BTC Address",
     icon: BtcLogo,
   },
