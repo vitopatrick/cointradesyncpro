@@ -1,7 +1,6 @@
 .contact__grid {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 3rem;
+    width: 60%;
+    margin: auto;
 }
 
 .contact {
@@ -24,7 +23,7 @@
     color: #777;
     border-radius: 0.2rem;
     outline: none;
-    border: 1px solid #27ae61;
+    border: 1px solid #0d6efd;
 }
 
 .form__group textarea {
@@ -44,7 +43,7 @@
     border: none;
     font-size: 1rem;
     padding: 0.4rem;
-    background-color: #27ae61;
+    background-color: #0d6efd;
     color: white;
     cursor: pointer;
     border-radius: 0.2rem;
@@ -56,7 +55,7 @@
 
 @media screen and (max-width:780px){
     .contact__grid{
-        grid-template-columns: 1fr;
+        width: 80%;
     }
     .contact__form-grid{
         grid-template-columns: 1fr;

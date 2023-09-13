@@ -5,7 +5,7 @@ import "./address.css";
 
 const Address = () => {
   return (
-    <IconContext.Provider value={{ color: "#27ae61", size: "1.8rem" }}>
+    <IconContext.Provider value={{ color: "#0d6efd", size: "1.8rem" }}>
       <div className="address">
         <div className="address__container">
           <div className="address__card">

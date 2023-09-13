@@ -6,7 +6,7 @@ import "./about.css";
 const About = () => {
   return (
     <React.Fragment>
-      <IconContext.Provider value={{ color: "#27ae61", size: "1.8rem" }}>
+      <IconContext.Provider value={{ color: "#0d6efd", size: "1.8rem" }}>
         <div className="py-5">
           <div className="container d-flex flex-column">
             <div className="text-center">

@@ -1,14 +1,11 @@
 import React from "react";
 import "./form.css";
-import Image from "../../img/contact.png";
+// import Image from "../../img/contact.png";
 
 const Form = () => {
   return (
     <div className="contact">
       <div className="contact__grid">
-        <div className="contact__img">
-          <img src={Image} alt="" />
-        </div>
         <div className="contact__form">
           <div className="contact__form-title mt-1">
             <h1>Let us here your complain</h1>

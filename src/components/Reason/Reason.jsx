@@ -12,7 +12,7 @@ import {
 
 const Reason = () => {
   return (
-    <IconContext.Provider value={{ size: "1.6rem", color: "#27ae61" }}>
+    <IconContext.Provider value={{ size: "1.6rem", color: "#0d6efd" }}>
       <div className="bg-dark text-white">
         <div className="container d-flex flex-column">
           <div className="my-4 text-center">

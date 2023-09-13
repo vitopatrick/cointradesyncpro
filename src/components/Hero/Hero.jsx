@@ -29,11 +29,11 @@ const Hero = () => {
               cryptocurrency experts that invest in mining and cryptocurrency
               trading. We carefully examine the volatility of bitcoin and other
               crypto currencies, invest and make good profit from our
-              investments.
+              investments and copy trading feature.
             </p>
           </div>
           <div className="text-center mx-auto">
-            <Link to="/register" className="btn btn-success fs-5 text-sec">
+            <Link to="/register" className="btn btn-primary fs-5 text-sec">
               Get Started <FaChevronCircleRight className="ms-2" />
             </Link>
           </div>
